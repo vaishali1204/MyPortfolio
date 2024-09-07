@@ -1,6 +1,6 @@
 /* Full-page background with the uploaded image */
 .about-me-section {
-    background: url('/images/profile_image.png') no-repeat center center fixed; /* Full background image */
+  background: url('../../public/images/profile_image.png')  no-repeat center center fixed; /* Full background image */
     background-size: cover; /* Cover the entire page */
     padding: 60px 20px;
     text-align: center;
