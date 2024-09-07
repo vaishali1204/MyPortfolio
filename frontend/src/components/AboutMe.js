@@ -1,6 +1,6 @@
 import React from 'react';
-import { Typewriter } from 'react-simple-typewriter';  // Import for the typing effect from react-simple-typewriter
-import '../styles/AboutMe.css';  // Correct path to your CSS file
+import { Typewriter } from 'react-simple-typewriter';  // Import for typing effect
+import '../styles/AboutMe.css';  // Ensure this is the correct path for your CSS
 
 const AboutMe = () => {
   return (
@@ -20,11 +20,11 @@ const AboutMe = () => {
             cursor
             cursorStyle="|"
             typeSpeed={100}  // Slower typing speed
-            deleteSpeed={50}  // No deleting, but you can adjust if needed
+            deleteSpeed={50}
             delaySpeed={2000}  // Delay between the words
           />
         </h1>
-
+        
         <p>
           Hi, I'm <strong>Vaishali Verma</strong>, an aspiring Software Engineer with a solid foundation in full-stack web development and a passion for building impactful software solutions. Currently, I am pursuing my <strong>M.Tech in Computer Science Engineering</strong> at Thapar Institute of Engineering & Technology, expected to graduate in 2025.
         </p>
@@ -41,7 +41,7 @@ const AboutMe = () => {
           I'm constantly exploring new technologies and have a keen interest in <strong>blockchain, machine learning, and cloud computing</strong>. I enjoy working on projects that combine these emerging technologies with practical software solutions.
         </p>
         <p>
-          I also code on LeetCode, HackerRank, and CodeChef to practice and improve my problem-solving & analytical skills.
+        I also code on LeetCode, HackerRank, and CodeChef to practice and improve my problem-solving & analytical skills.
         </p>
         <p className="connect-text">
           Let's connect! Feel free to reach out to me via email at <a href="mailto:vaishaliverma1204@gmail.com">vaishaliverma1204@gmail.com</a>, or check out my <a href="https://www.linkedin.com/in/vaishali-verma-025125174/" target="_blank" rel="noopener noreferrer">LinkedIn</a> and <a href="https://github.com/vaishali1204" target="_blank" rel="noopener noreferrer">GitHub</a> profiles for more information about my work and projects.
