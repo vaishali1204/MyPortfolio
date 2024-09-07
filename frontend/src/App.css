@@ -78,3 +78,8 @@ html {
   font-size: 1rem;
   color: #fff;
 }
+@media (max-width: 768px) {
+  .app-container {
+    padding: 10px;
+  }
+}

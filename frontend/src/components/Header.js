@@ -12,7 +12,7 @@ const Header = () => {
           <li><a href="#contact">Contact</a></li>
           {/* Adding Download CV link */}
           <li>
-            <a href="/Resume.pdf" download="VaishaliVerma_Resume.pdf">
+            <a href="/VaishaliResume2025.pdf" download="VaishaliVermaResume.pdf">
               Download CV
             </a>
           </li>

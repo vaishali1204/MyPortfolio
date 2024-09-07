@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import '../styles/Contact.css'; // Import the CSS file for the Contact form
+import '../styles/Contact.css';  // Assuming this is the correct path for your CSS
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -18,21 +18,16 @@ const Contact = () => {
         try {
             await axios.post('/api/contact', formData);
             alert('Message sent successfully!');
-            setFormData({
-                name: '',
-                email: '',
-                message: '',
-            });
         } catch (error) {
-            console.error('There was an error sending the message', error);
-            alert('Failed to send message, please try again later.');
+            console.error('Error sending message:', error);
+            alert('Failed to send the message. Please try again.');
         }
     };
 
     return (
-        <div className="contact-form">
+        <div className="contact-section">
             <h2>Let's Connect Together</h2>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className="contact-form">
                 <input
                     type="text"
                     name="name"
@@ -58,6 +53,28 @@ const Contact = () => {
                 ></textarea>
                 <button type="submit">Send Message</button>
             </form>
+            
+            {/* Social Links */}
+            <div className="social-links">
+                <h3>Find me on:</h3>
+                <ul>
+                    <li>
+                        <a href="mailto:vaishaliverma1204@gmail.com" target="_blank" rel="noopener noreferrer">
+                            Gmail
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/vaishali-verma-025125174/" target="_blank" rel="noopener noreferrer">
+                            LinkedIn
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/vaishali1204" target="_blank" rel="noopener noreferrer">
+                            GitHub
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     );
 };
