@@ -1,11 +1,11 @@
-/* Full-page background with the uploaded image */
 .about-me-section {
-  background: url('../../public/images/profile_image.png') no-repeat center center fixed;
-  background-size: cover;
+  background: url('../../public/images/profile_image.png') no-repeat center center fixed; /* Full background image */
+  background-size: cover; /* Cover the entire page */
   padding: 60px 20px;
   text-align: center;
   color: #fff;
   min-height: 100vh; /* Ensures it takes the full height of the screen */
+  box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
 }
 
 .about-me-container {
@@ -14,6 +14,8 @@
   border-radius: 10px;
   max-width: 800px;
   margin: auto;
+  box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
+  width: 100%; /* Ensures the container takes full width on mobile devices */
 }
 
 .about-me-container h1 {
@@ -29,51 +31,22 @@
   margin-bottom: 20px;
 }
 
-.connect-text a {
-  color: #ffeaa7;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-.connect-text a:hover {
-  color: #74ebd5;
-}
-
-.profile-image {
-  border-radius: 10px;
-  width: 100%;
-  max-width: 500px;
-  margin-bottom: 20px;
-  border: 5px solid #ff4757;
-}
-
-/* Ensure the image is covering the full page */
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-/* MEDIA QUERIES START HERE */
+/* Media query for smaller devices */
 @media (max-width: 768px) {
-  .about-me-section {
-    padding: 20px; /* Adjust padding for smaller devices */
-  }
-
   .about-me-container {
-    padding: 20px;
+      padding: 20px;
+      width: 90%; /* Reduce width slightly to ensure it fits on smaller screens */
   }
 
   .about-me-container h1 {
-    font-size: 2rem; /* Smaller font size for mobile */
+      font-size: 2rem; /* Reduce font size for smaller screens */
   }
 
   .about-me-container p {
-    font-size: 1rem; /* Smaller font size for mobile */
+      font-size: 1rem; /* Adjust font size for readability */
   }
 
   .profile-image {
-    max-width: 100%; /* Ensure image takes full width on smaller devices */
+      max-width: 100%; /* Ensure the image doesn't overflow the container */
   }
 }
