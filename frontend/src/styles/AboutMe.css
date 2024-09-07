@@ -1,27 +1,30 @@
+/* AboutMe.css */
+
 .about-me-section {
-  background: url('../../public/images/profile_image.png') no-repeat center center fixed; /* Full background image */
-  background-size: cover; /* Cover the entire page */
+  background-color: #000; /* Black background */
   padding: 60px 20px;
-  text-align: center;
   color: #fff;
-  min-height: 100vh; /* Ensures it takes the full height of the screen */
-  box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .about-me-container {
-  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent dark background */
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
   padding: 40px;
   border-radius: 10px;
   max-width: 800px;
-  margin: auto;
-  box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
-  width: 100%; /* Ensures the container takes full width on mobile devices */
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .about-me-container h1 {
   font-size: 2.5rem;
   color: #ff4757; /* Highlighted text color */
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .about-me-container p {
@@ -29,24 +32,20 @@
   color: #f0f8ff;
   line-height: 1.8;
   margin-bottom: 20px;
+  text-align: justify;
 }
 
-/* Media query for smaller devices */
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .about-me-container {
-      padding: 20px;
-      width: 90%; /* Reduce width slightly to ensure it fits on smaller screens */
+    padding: 20px;
   }
 
   .about-me-container h1 {
-      font-size: 2rem; /* Reduce font size for smaller screens */
+    font-size: 2rem;
   }
 
   .about-me-container p {
-      font-size: 1rem; /* Adjust font size for readability */
-  }
-
-  .profile-image {
-      max-width: 100%; /* Ensure the image doesn't overflow the container */
+    font-size: 1rem;
   }
 }
