@@ -1,0 +1,72 @@
+/* Full-page background with the uploaded image */
+.about-me-section {
+    background: url('/images/profile_image.png') no-repeat center center fixed; /* Full background image */
+    background-size: cover; /* Cover the entire page */
+    padding: 60px 20px;
+    text-align: center;
+    color: #fff;
+    min-height: 100vh; /* Ensures it takes the full height of the screen */
+  }
+  
+  .about-me-container {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent dark background */
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .about-me-container h1 {
+    font-size: 2.5rem;
+    color: #ff4757; /* Highlighted text color */
+    margin-bottom: 30px;
+  }
+  
+  .about-me-container p {
+    font-size: 1.2rem;
+    color: #f0f8ff;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  
+  .connect-text a {
+    color: #ffeaa7;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .connect-text a:hover {
+    color: #74ebd5;
+  }
+  
+  .profile-image {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+    border: 5px solid #ff4757;
+  }
+  
+  /* Ensure the image is covering the full page */
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .about-me-container {
+      padding: 20px;
+    }
+    .about-me-container h1 {
+      font-size: 2rem;
+    }
+    .about-me-container p {
+      font-size: 1rem;
+    }
+    .profile-image {
+      max-width: 100%;
+    }
+  }
+  

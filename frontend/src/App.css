@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #1a1a1a;  /* Dark background globally */
+  color: #f0f0f0;  /* Light text globally */
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-sections {
+  padding: 40px;
+}
+
+section {
+  margin-bottom: 100px;
+  background-color: rgba(0, 0, 0, 0.8);  /* Dark background for each section */
+  border-radius: 10px;
+  padding: 40px;
+}
+
+section h1 {
+  font-size: 2rem;
+  color: #ff4757;  /* Highlighted section title */
+}
+
+.about-me-container, .skills-container, .projects-container, .contact-container {
+  color: #f0f0f0;  /* Ensure text color is light for readability */
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Header and Footer styling */
+.header {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+}
+
+.nav-bar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-bar ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.nav-bar ul li a {
+  text-decoration: none;
+  color: #f0f0f0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-bar ul li a:hover {
+  color: #ff6347;  /* Hover effect */
+}
+
+.footer {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+  color: #f0f0f0;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 1rem;
+  color: #fff;
+}
