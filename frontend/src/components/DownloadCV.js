@@ -4,7 +4,7 @@ const DownloadCV = () => {
     return (
         <div className="cv-section">
             <h2>Download My CV</h2>
-            <a href="/VaishaliResume.pdf" download="Vaishali_Verma_CV.pdf">
+            <a href="https://vaishali1204.github.io/MyPortfolio/VaishaliResume.pdf" download="VaishaliVermaResume.pdf">
                 <button>Download CV</button>
             </a>
         </div>
