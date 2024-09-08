@@ -10,9 +10,9 @@ const Header = () => {
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
-          {/* Adding Download CV link */}
+          {/* Updated download CV link */}
           <li>
-          <a href="https://vaishali1204.github.io/MyPortfolio/VaishaliResume.pdf" download="VaishaliVermaResume.pdf">
+            <a href={`${process.env.PUBLIC_URL}/VaishaliResume.pdf`} download="VaishaliVermaResume.pdf">
               Download CV
             </a>
           </li>
