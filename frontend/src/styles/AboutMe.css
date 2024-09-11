@@ -1,26 +1,29 @@
-/* Full-page black background */
+/* Full-page background */
 .about-me-section {
-  background-color: #000;  /* Full black background */
+  background-color: transparent;  /* Make the background transparent */
   padding: 60px 20px;
   text-align: center;
   color: #fff;
-  min-height: 100vh;
+  min-height: 100vh;  /* Ensures it takes the full height of the screen */
 }
 
+/* Container for the About Me content */
 .about-me-container {
-  background-color: transparent; /* Remove the semi-transparent background */
+  background-color: transparent; /* Fully transparent background */
   padding: 40px;
   border-radius: 10px;
   max-width: 800px;
-  margin: auto;
+  margin: auto;  /* Center the container */
 }
 
+/* Heading styling */
 .about-me-container h1 {
   font-size: 2.5rem;
   color: #ff4757; /* Highlighted text color */
   margin-bottom: 30px;
 }
 
+/* Paragraph styling */
 .about-me-container p {
   font-size: 1.2rem;
   color: #f0f8ff;
@@ -28,7 +31,7 @@
   margin-bottom: 20px;
 }
 
-/* Profile image */
+/* Profile image styling */
 .profile-image {
   width: 150px;
   height: 150px;
@@ -37,7 +40,7 @@
   border: 5px solid #ff4757;  /* Add a border matching the theme color */
 }
 
-/* Ensure the image is responsive */
+/* Responsive adjustments for mobile devices */
 @media screen and (max-width: 768px) {
   .about-me-section {
     padding: 30px 10px;  /* Adjust padding for mobile */
@@ -49,16 +52,16 @@
   }
   
   .about-me-container h1 {
-    font-size: 2rem;
+    font-size: 2rem;  /* Reduce heading size for mobile */
   }
 
   .about-me-container p {
-    font-size: 1rem;
+    font-size: 1rem;  /* Reduce paragraph font size for mobile */
   }
 
   /* Ensure the about-me-container takes full width on smaller devices */
   .about-me-container {
-    width: 100%;
+    width: 100%;  /* Full width on mobile */
     padding: 20px;
     margin: 0;  /* Remove margin to make it fit the screen */
   }
