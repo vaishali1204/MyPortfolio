@@ -1,20 +1,21 @@
-/* Full-page black background */
+/* About Me Section - Remove any black background */
 .about-me-section {
-  background-color: #000;  /* Full black background */
+  background-color: transparent;  /* Transparent background */
   padding: 60px 20px;
   color: #fff;
-  min-height: 100vh;  /* Ensures it takes the full height of the screen */
-  text-align: left;  /* Ensure text is aligned to the left */
+  min-height: 100vh;  /* Full height for the section */
+  width: 100%;  /* Full width */
+  text-align: left;  /* Ensure text is left aligned */
 }
 
 /* Container for the About Me content */
 .about-me-container {
-  background-color: transparent; /* Fully transparent background */
-  padding: 0; /* Remove padding */
-  width: 100%;  /* Full width for the container */
-  max-width: none;  /* Remove max-width limitation */
-  margin: 0;  /* No margins, let it expand fully */
-  text-align: left;  /* Left align text */
+  background-color: transparent;  /* Transparent to avoid any unwanted background */
+  padding: 0;  /* Remove padding */
+  width: 100%;  /* Full width of the container */
+  max-width: 100%;  /* No max-width to let it expand fully */
+  margin: 0;  /* No margin */
+  text-align: left;  /* Ensure text is left aligned */
 }
 
 /* Heading styling */
@@ -53,17 +54,16 @@
   }
   
   .about-me-container h1 {
-    font-size: 2rem;  /* Reduce heading size for mobile */
+    font-size: 2rem;
   }
 
   .about-me-container p {
-    font-size: 1rem;  /* Reduce paragraph font size for mobile */
+    font-size: 1rem;
   }
 
   /* Ensure the about-me-container takes full width on smaller devices */
   .about-me-container {
-    width: 100%;  /* Full width on mobile */
-    margin: 0;  /* Remove margin */
-    padding: 20px;  /* Add padding for smaller screens */
+    width: 100%;
+    padding: 20px;
   }
 }
