@@ -1,20 +1,20 @@
-/* Full-page background */
+/* Full-page black background */
 .about-me-section {
-  background-color: transparent;  /* Transparent background */
+  background-color: #000;  /* Full black background */
   padding: 60px 20px;
-  text-align: left;  /* Align text to the left */
   color: #fff;
   min-height: 100vh;  /* Ensures it takes the full height of the screen */
+  text-align: left;  /* Ensure text is aligned to the left */
 }
 
 /* Container for the About Me content */
 .about-me-container {
   background-color: transparent; /* Fully transparent background */
-  padding: 40px;
-  border-radius: 10px;
-  max-width: 100%;  /* Allow the content to take full width */
-  margin: 0 auto;  /* Center only horizontally */
-  text-align: left; /* Align content to the left */
+  padding: 0; /* Remove padding */
+  width: 100%;  /* Full width for the container */
+  max-width: none;  /* Remove max-width limitation */
+  margin: 0;  /* No margins, let it expand fully */
+  text-align: left;  /* Left align text */
 }
 
 /* Heading styling */
@@ -45,7 +45,6 @@
 @media screen and (max-width: 768px) {
   .about-me-section {
     padding: 30px 10px;  /* Adjust padding for mobile */
-    text-align: left;  /* Align content to the left */
   }
 
   .profile-image {
@@ -64,7 +63,7 @@
   /* Ensure the about-me-container takes full width on smaller devices */
   .about-me-container {
     width: 100%;  /* Full width on mobile */
-    padding: 20px;
-    margin: 0;  /* Remove margin to make it fit the screen */
+    margin: 0;  /* Remove margin */
+    padding: 20px;  /* Add padding for smaller screens */
   }
 }
