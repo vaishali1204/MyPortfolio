@@ -1,8 +1,8 @@
 /* Full-page background */
 .about-me-section {
-  background-color: transparent;  /* Make the background transparent */
+  background-color: transparent;  /* Transparent background */
   padding: 60px 20px;
-  text-align: center;
+  text-align: left;  /* Align text to the left */
   color: #fff;
   min-height: 100vh;  /* Ensures it takes the full height of the screen */
 }
@@ -12,8 +12,9 @@
   background-color: transparent; /* Fully transparent background */
   padding: 40px;
   border-radius: 10px;
-  max-width: 800px;
-  margin: auto;  /* Center the container */
+  max-width: 100%;  /* Allow the content to take full width */
+  margin: 0 auto;  /* Center only horizontally */
+  text-align: left; /* Align content to the left */
 }
 
 /* Heading styling */
@@ -44,6 +45,7 @@
 @media screen and (max-width: 768px) {
   .about-me-section {
     padding: 30px 10px;  /* Adjust padding for mobile */
+    text-align: left;  /* Align content to the left */
   }
 
   .profile-image {
