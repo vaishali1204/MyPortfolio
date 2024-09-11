@@ -16,7 +16,7 @@ const Contact = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('/api/contact', formData);
+            await axios.post('http://localhost:5001/api/contact', formData); // Ensure the correct port here
             alert('Message sent successfully!');
         } catch (error) {
             console.error('Error sending message:', error);
@@ -54,7 +54,6 @@ const Contact = () => {
                 <button type="submit">Send Message</button>
             </form>
             
-            {/* Social Links */}
             <div className="social-links">
                 <h3>Find me on:</h3>
                 <ul>
@@ -79,4 +78,5 @@ const Contact = () => {
     );
 };
 
+// Ensure you have a default export
 export default Contact;

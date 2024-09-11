@@ -12,7 +12,125 @@
 
 .contact-form h2 {
   color: #fff;
-  margin-bottom: 20px;
+  margin-bottom: 20px;.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .contact-form h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem; /* Make text size more consistent */
+  }
+  
+  .contact-form button {
+    background-color: #ff4757;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem; /* Increase button font size for better visibility */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #ff6347;
+  }
+  
+  /* Social Links Styling */
+  .social-links {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .social-links h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .social-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .social-links ul li {
+    display: inline-block;
+    margin: 0 15px;
+  }
+  
+  .social-links ul li a {
+    color: #ff4757;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  
+  .social-links ul li a:hover {
+    color: #74ebd5;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-form {
+        width: 90%;
+        padding: 20px;
+    }
+  
+    .contact-form input,
+    .contact-form textarea {
+        max-width: 100%;
+    }
+  
+    .social-links ul li a {
+        font-size: 1rem;
+    }
+  }
+  
+  /* Additional Media Query for Small Devices */
+  @media (max-width: 480px) {
+    .contact-form h2 {
+      font-size: 1.5rem; /* Adjust heading size for small screens */
+    }
+  
+    .contact-form input,
+    .contact-form textarea {
+      font-size: 0.9rem; /* Smaller font size on mobile */
+    }
+  
+    .contact-form button {
+      font-size: 1rem; /* Adjust button size on mobile */
+    }
+  
+    .social-links ul li {
+      margin: 0 10px; /* Reduce spacing for social links */
+    }
+  
+    .social-links h3 {
+      font-size: 1.2rem; /* Reduce heading size for mobile */
+    }
+  }
+  
   font-size: 2rem;
 }
 

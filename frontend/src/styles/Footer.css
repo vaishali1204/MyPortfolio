@@ -1,19 +1,43 @@
 .footer {
-    background-color: #333;
-    padding: 20px;
-    text-align: center;
-    color: #f0f0f0;
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+  color: #f0f0f0;
+  font-size: 1.1rem;  /* Slightly increased font size for better readability */
+}
+
+.footer p {
+  margin: 0;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.footer a {
+  color: #ff4757;  /* Add a theme color for links */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #74ebd5;  /* Add a hover effect for links */
+}
+
+/* Responsive Design for Medium Screens */
+@media (max-width: 768px) {
+  .footer {
+      padding: 15px;  /* Adjust padding for smaller devices */
+      font-size: 1rem;  /* Adjust font size for smaller screens */
   }
-  
+}
+
+/* Responsive Design for Small Screens (Mobile) */
+@media (max-width: 480px) {
+  .footer {
+      padding: 10px;  /* Further reduce padding for very small screens */
+      font-size: 0.9rem;  /* Adjust font size for mobile */
+  }
+
   .footer p {
-    margin: 0;
-    font-size: 1rem;
-    color: #fff;
+      font-size: 0.85rem;  /* Further reduce text size for mobile */
   }
-  @media (max-width: 768px) {
-    .footer {
-      text-align: center;
-      padding: 20px;
-    }
-  }
-  
+}

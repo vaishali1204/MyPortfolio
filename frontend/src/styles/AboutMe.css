@@ -1,21 +1,17 @@
-/* Full-page background with the uploaded image */
+/* Full-page black background */
 .about-me-section {
-  background: url('../../public/images/profile_image.png') no-repeat center center fixed;
-  background-size: cover;
-  min-height: 100vh; /* Ensures full height of the screen */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 20px;
+  background-color: #000;  /* Full black background */
+  padding: 60px 20px;
+  text-align: center;
   color: #fff;
+  min-height: 100vh;
 }
 
 .about-me-container {
-  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+  background-color: transparent; /* Remove the semi-transparent background */
   padding: 40px;
   border-radius: 10px;
-  width: 100%; /* Full width */
-  max-width: 1200px; /* Limit maximum width for larger screens */
+  max-width: 800px;
   margin: auto;
 }
 
@@ -32,14 +28,26 @@
   margin-bottom: 20px;
 }
 
-/* Responsive design for smaller screens */
-@media (max-width: 768px) {
-  .about-me-container {
-    padding: 20px;
-    max-width: 100%;  /* Ensure full width for mobile */
-    width: 100%; /* Full width */
+/* Profile image */
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 5px solid #ff4757;  /* Add a border matching the theme color */
+}
+
+/* Ensure the image is responsive */
+@media screen and (max-width: 768px) {
+  .about-me-section {
+    padding: 30px 10px;  /* Adjust padding for mobile */
   }
 
+  .profile-image {
+    width: 120px;
+    height: 120px;
+  }
+  
   .about-me-container h1 {
     font-size: 2rem;
   }
@@ -48,19 +56,10 @@
     font-size: 1rem;
   }
 
-  .about-me-section {
-    padding: 20px; /* Reduce padding for small devices */
+  /* Ensure the about-me-container takes full width on smaller devices */
+  .about-me-container {
+    width: 100%;
+    padding: 20px;
+    margin: 0;  /* Remove margin to make it fit the screen */
   }
 }
-
-.connect-text a {
-  color: #ffeaa7;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-.connect-text a:hover {
-  color: #74ebd5;
-}
-

@@ -10,7 +10,58 @@
   }
   
   .nav-bar ul li {
-    display: inline-block;
+    display: inline-block;.header {
+      background-color: #333;
+      padding: 20px;
+      text-align: center;
+  }
+  
+  .nav-bar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;  /* Reset margin for consistency */
+  }
+  
+  .nav-bar ul li {
+      display: inline-block;
+      margin: 0 15px;
+  }
+  
+  .nav-bar ul li a {
+      text-decoration: none;
+      color: #f0f0f0;
+      font-size: 1.2rem;
+      font-weight: bold;
+      transition: color 0.3s ease;
+  }
+  
+  .nav-bar ul li a:hover {
+      color: #ff6347;  /* Hover effect */
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+      .header {
+          padding: 15px;  /* Slightly reduced padding for smaller screens */
+      }
+  
+      .nav-bar ul li {
+          display: block;  /* Stack the links vertically */
+          margin: 10px 0;  /* Add margin between vertical links */
+      }
+  
+      .nav-bar ul li a {
+          font-size: 1.1rem;  /* Adjust font size for smaller screens */
+      }
+  }
+  
+  /* Further responsive design for very small screens */
+  @media (max-width: 480px) {
+      .nav-bar ul li a {
+          font-size: 1rem;  /* Further adjust font size for tiny screens */
+      }
+  }
+  
     margin: 0 15px;
   }
   

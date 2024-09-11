@@ -18,7 +18,7 @@ body {
 
 section {
   margin-bottom: 100px;
-  background-color: rgba(0, 0, 0, 0.8);  /* Dark background for each section */
+  background-color: transparent;  /* Remove additional background for sections */
   border-radius: 10px;
   padding: 40px;
 }
@@ -30,6 +30,7 @@ section h1 {
 
 .about-me-container, .skills-container, .projects-container, .contact-container {
   color: #f0f0f0;  /* Ensure text color is light for readability */
+  background-color: transparent;  /* Ensure no background in section containers */
 }
 
 /* Smooth scrolling */
@@ -78,8 +79,41 @@ html {
   font-size: 1rem;
   color: #fff;
 }
+
+/* Media query for mobile devices */
 @media (max-width: 768px) {
   .app-container {
     padding: 10px;
+  }
+
+  /* Adjust padding for mobile in content sections */
+  .content-sections {
+    padding: 20px;
+  }
+
+  /* Ensure sections fill full width in mobile view */
+  section {
+    margin-bottom: 50px;
+    padding: 20px;
+  }
+
+  section h1 {
+    font-size: 1.5rem;  /* Smaller font size for mobile */
+  }
+
+  .about-me-container, .skills-container, .projects-container, .contact-container {
+    padding: 20px;  /* Adjust padding for mobile */
+    text-align: left;  /* Align text left for better readability */
+    width: 100%;  /* Ensure containers take full width on mobile */
+  }
+
+  .nav-bar ul li {
+    display: block;  /* Stack navigation items vertically on mobile */
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .footer {
+    font-size: 0.9rem;  /* Slightly smaller footer text for mobile */
   }
 }
